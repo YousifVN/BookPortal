@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="YousifVN" />
+    <title>Bookish Gateway</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <style>
+      section {
+        padding: 60px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav bar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary px-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-book-half"></i>
+          Atomic Habits
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#topics">About The Book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contact">Get in Touch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#news-letter">News Letter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main image & intro text -->
+    <section id="intro">
+      <div class="container-lg">
+        <div class="row justify-content-center mt-2">
+          <div class="col-md-5 text-center text-md-start mb-3 mt-5">
+            <h1>
+              <div class="display-2 fw-bold">Atomic Habits</div>
+              <div class="display-5 text-muted">
+                Tiny Changes, Remarkable Results
+              </div>
+            </h1>
+            <p class="lead my-4 text-muted text-justify">
+              Atomic Habits explores the transformative power of small changes.
+              James Clear provides practical strategies for positive habits and
+              overcoming negativity. Through anecdotes and analysis, he
+              illustrates how these tiny shifts lead to significant results.
+            </p>
+            <a href="#pricing" class="btn btn-primary btn">Buy Now</a>
+
+            <!-- open sidebar / offcanvas -->
+            <a
+              href="#sidebar"
+              class="d-block mt-3 text-capitalize text-primary"
+              data-bs-toggle="offcanvas"
+              role="button"
+              aria-controls="sidebar"
+              >Explore my favorite books</a
+            >
+          </div>
+          <!-- showing the image only on md screens and bigger -->
+          <!-- <div class="col-md-5 text-center d-none d-md-block"> -->
+          <div class="col-md-5 text-center">
+            <img
+              class="img-fluid"
+              src="assets/cover.png"
+              alt="Atomic Habits Cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- pricing plans -->
+    <section id="pricing" class="bg-light mt-5">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Pricing</h2>
+          <p class="text-muted lead">Choose a pricing plan that suits you</p>
+        </div>
+
+        <div class="row my-5 justify-content-center align-items-center g-3">
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-dark">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Starter Edition</h4>
+                <p class="lead card-subtitle">eBook Download Only</p>
+                <p class="display-6 text-primary my-4 fw-bold">7,000 IQD</p>
+                <p class="text-muted mx-5 text-justify">
+                  Perfect for those eager to dive into Atomic Habits. Download
+                  now and begin your journey.
+                </p>
+                <a href="#" class="btn btn-outline-dark mt-3 btn-lg">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-9 col-lg-4">
+            <div class="card border-primary border-2">
+              <div class="card-header text-center text-primary">
+                Most Popular
+              </div>
+              <div class="card-body text-center py-5">
+                <h4 class="card-title">Complete Edition</h4>
+                <p class="lead card-subtitle">
+                  eBook Download &amp; All Updates
+                </p>
+                <p class="display-5 text-primary my-4 fw-bold">15,000 IQD</p>
+                <p class="text-muted mx-5 text-justify">
+                  The most popular choice! Gain access to the complete edition
+                  of Atomic Habits, including all updates. Download the eBook
+                  and stay up-to-date with the latest insights and strategies.
+                </p>
+                <a href="#" class="btn btn-outline-dark mt-3 btn-lg">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-dark">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Ultimate Edition</h4>
+                <p class="lead card-subtitle text-capitalize">
+                  Download, Updates &amp; Extras
+                </p>
+                <p class="display-6 text-primary my-4 fw-bold">20,000 IQD</p>
+                <p class="text-muted mx-5 text-justify">
+                  Dive deeper into Atomic Habits with bonus content and
+                  additional resources.
+                </p>
+                <a href="#" class="btn btn-outline-dark mt-3 btn-lg">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- topics at a glance -->
+    <section id="topics">
+      <div class="container-md">
+        <div class="text-center">
+          <h2>About The Book</h2>
+          <p class="text-muted lead text-capitalize">
+            A quick glance at the topics covered
+          </p>
+        </div>
+
+        <div class="row my-5 g-5 justify-content-around align-items-center">
+          <div class="col-6 col-lg-4">
+            <img
+              src="assets/cover-transparent.png"
+              class="img-fluid"
+              alt="book cover"
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <!-- accordion -->
+            <div class="accordion" id="chapters">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Chapter 1: The Fundamentals of Atomic Habits
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      In the opening chapter, delve deep into the foundational
+                      principles of Atomic Habits. Author James Clear introduces
+                      readers to the transformative power of small changes,
+                      emphasizing how seemingly minor adjustments in behavior
+                      can compound over time to yield remarkable results.
+                      Through engaging anecdotes and scientific insights, Clear
+                      illustrates the importance of understanding the underlying
+                      mechanisms of habit formation and how these insights can
+                      be leveraged to enact positive change in our lives. By
+                      grasping the fundamentals outlined in this chapter,
+                      readers will lay the groundwork for their journey towards
+                      personal growth and mastery.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Chapter 2: Make Time for Tiny Changes
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      In Chapter 2, Clear emphasizes the significance of carving
+                      out dedicated time for implementing small changes in our
+                      daily routines. Drawing from his extensive research and
+                      personal experiences, Clear demonstrates how intentional
+                      allocation of time can facilitate the adoption of new
+                      habits and behaviors. Through practical strategies and
+                      actionable advice, readers will learn how to prioritize
+                      habit formation amidst the hustle and bustle of modern
+                      life. By making time for tiny changes, individuals can set
+                      themselves on a path towards continuous improvement and
+                      lasting transformation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Chapter 3: The Power of Habit Stacking
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Chapter 3 introduces readers to the concept of habit
+                      stacking, a powerful technique for building new habits
+                      atop existing ones. Clear explores how habit stacking
+                      leverages the brain's natural inclination towards routine
+                      and familiarity to streamline the process of behavior
+                      change. By strategically layering new habits onto
+                      established routines, individuals can create seamless
+                      transitions that minimize resistance and maximize success.
+                      Through illuminating examples and practical guidance,
+                      Clear empowers readers to harness the power of habit
+                      stacking to cultivate positive behaviors and break free
+                      from the shackles of old habits.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Chapter 4: Mastering the Art of Habit Cues
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      In this chapter, Clear delves into the psychology behind
+                      habit cues and their profound influence on our daily
+                      actions. Drawing upon research from behavioral psychology
+                      and neuroscience, Clear elucidates the role of cues in
+                      triggering habitual responses and shaping our behavior
+                      patterns. By understanding the mechanics of habit
+                      formation, readers will gain valuable insights into
+                      identifying and manipulating cues to their advantage.
+                      Armed with this knowledge, individuals can proactively
+                      design environments that promote desired behaviors while
+                      minimizing the allure of detrimental habits. Mastering the
+                      art of habit cues is essential for anyone seeking to take
+                      control of their habits and steer their lives towards
+                      success and fulfillment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    Chapter 5: Rewire Your Brain with Habit Tracking
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Chapter 5 introduces readers to the concept of habit
+                      tracking as a powerful tool for behavior change. Clear
+                      explores how the simple act of monitoring our habits and
+                      progress can have a profound impact on our motivation and
+                      accountability. Through the use of habit tracking apps,
+                      journals, or simple checklists, individuals can gain
+                      valuable insights into their behavior patterns and
+                      identify areas for improvement. By establishing a habit of
+                      tracking, readers will develop a heightened sense of
+                      self-awareness and ownership over their actions, paving
+                      the way for sustainable growth and transformation. As
+                      Clear demonstrates, habit tracking serves as a powerful
+                      catalyst for rewiring the brain and cultivating habits
+                      that align with our goals and aspirations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- reviews list -->
+    <section id="reviews" class="bg-light">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Book Reviews <i class="bi bi-stars text-primary"></i></h2>
+          <p class="lead text-capitalize">
+            What my readers have said about the book...
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="list-group">
+              <div class="list-group-item py-3">
+                <div class="mb-2">
+                  <i class="bi bi-star-fill text-primary"></i>
+                  <i class="bi bi-star-fill text-primary"></i>
+                  <i class="bi bi-star-fill text-primary"></i>
+                  <i class="bi bi-star-fill text-primary"></i>
+                </div>
+                <h5 class="mb-1">Life-Changing Insights!</h5>
+                <p class="mb-1">
+                  This book has completely transformed my approach to personal
+                  development. James Clear's insights into habit formation are
+                  both practical and profound. I've implemented his strategies
+                  and have already seen significant improvements in my daily
+                  habits and productivity. A must-read for anyone looking to
+                  make positive changes in their life!
+                </p>
+                <small>Review by: Ahmed</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="mb-2">
+                  <i class="bi bi-star-fill text-primary"></i>
+                  <i class="bi bi-star-fill text-primary"></i>
+                  <i class="bi bi-star-fill text-primary"></i>
+                  <i class="bi bi-star-half text-primary"></i>
+                </div>
+                <h5 class="mb-1">Inspirational and Actionable!</h5>
+                <p class="mb-1">
+                  Atomic Habits is a game-changer! Clear's writing style is
+                  engaging and accessible, making complex concepts easy to
+                  understand and apply. I love the actionable tips and exercises
+                  provided throughout the book. It's not just theory; it's a
+                  practical guide to creating lasting change. Highly
+                  recommended!
+                </p>
+                <small>Review by: Yousif</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="mb-2">
+                  <i class="bi bi-star-fill text-primary"></i>
+                  <i class="bi bi-star-fill text-primary"></i>
+                  <i class="bi bi-star-fill text-primary"></i>
+                  <i class="bi bi-star-fill text-primary"></i>
+                  <i class="bi bi-star-fill text-primary"></i>
+                </div>
+                <h5 class="mb-1">Empowering and Transformative!</h5>
+                <p class="mb-1">
+                  Atomic Habits offers practical insights backed by science,
+                  helping readers take control of their habits and lives. James
+                  Clear's clear and empathetic approach makes complex concepts
+                  accessible. This book is a game-changer for anyone seeking
+                  positive change and goal achievement. Highly recommended!
+                </p>
+                <small>Review by: Hameed</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact form -->
+    <section id="contact">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Get in Touch</h2>
+          <p class="lead text-capitalize">
+            Question to ask? Fill out the form to contact me directly
+          </p>
+        </div>
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <form>
+              <label for="name" class="form-label"
+                >Your Name (First and Last Name):</label
+              >
+              <div class="input-group mb-4">
+                <span class="input-group-text"
+                  ><i class="bi bi-person-circle"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Yousif Mahmood"
+                  maxlength="30"
+                  required
+                />
+              </div>
+
+              <label for="email" class="form-label">Email Address:</label>
+              <div class="input-group mb-4">
+                <span class="input-group-text"
+                  ><i class="bi bi-envelope-at-fill"></i
+                ></span>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="yousifvnd@gmail.com"
+                  required
+                />
+              </div>
+
+              <label for="subject" class="form-label"
+                >What Is Your Question About?</label
+              >
+              <div class="input-group mb-4">
+                <span class="input-group-text"
+                  ><i class="bi bi-question-circle"></i
+                ></span>
+                <select id="subject" class="form-select">
+                  <option value="pricing">Pricing</option>
+                  <option value="shipping">Shipping</option>
+                  <option value="content">content</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-floating mb-4 mt-5">
+                <textarea
+                  id="message"
+                  class="form-control"
+                  style="height: 140px"
+                  required
+                  maxlength="500"
+                ></textarea>
+                <label for="message">Your Message Here...</label>
+              </div>
+
+              <div class="text-center">
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- news letter using a modal -->
+    <section id="news-letter" class="bg-light">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>News Letter <i class="bi bi-mailbox-flag"></i></h2>
+          <p class="lead text-capitalize">
+            Subscribe to get latest updates as they happen
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p class="text-muted mb-4 mt-1 text-justify">
+              Subscribe to our newsletter to stay ahead of the curve with the
+              latest news, articles, and updates delivered straight to your
+              inbox. Don't miss out—be the first to know!
+            </p>
+            <button
+              class="btn btn-outline-dark text-capitalize"
+              data-bs-toggle="modal"
+              data-bs-target="#reg-modal"
+            >
+              register for updates
+            </button>
+            <div class="row mt-4">
+              <small class="text-muted"
+                >*just showcasing the modal component in
+                <a
+                  class="text-primary"
+                  href="https://getbootstrap.com/docs/5.3/components/modal/"
+                  target="_blank"
+                  >Bootsrap 5</a
+                >
+                cuz i learned how to use it*</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- the modla itself -->
+
+    <div
+      class="modal fade"
+      id="reg-modal"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-capitalize" id="modal-title">
+              get the latest updates
+            </h5>
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit libero magni deleniti ab cupiditate aut atque alias
+              pariatur nostrum facilis placeat voluptate voluptates dolores,
+              mollitia vero fugiat eos excepturi quos.
+            </p>
+            <label for="modal-email" class="form-label text-capitalize"
+              >your email address:</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="modal-email"
+              placeholder="yousifvnd@gmail.com"
+              required
+            />
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- offcanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="sidebar"
+      aria-labelledby="sidebar-label"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-capitalize" id="sidebar-label">
+          My favorite books
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>
+          As an avid reader, I've been fortunate enough to delve into some truly
+          remarkable literary works. Here are a few of my all-time favorite:
+        </p>
+        <ul>
+          <li>The Great Gatsby</li>
+          <li>To Kill a Mockingbird</li>
+          <li>1984</li>
+          <li>Pride and Prejudice</li>
+          <li>The Catcher in the Rye</li>
+        </ul>
+        <p class="m-5"></p>
+        *yes i learned how to use a
+        <a
+          class="text-primary"
+          href="https://getbootstrap.com/docs/5.3/components/dropdowns/"
+          target="_blank"
+          >drop down</a
+        >
+        and im abusing it*
+        <p>
+          <!-- drop down -->
+        </p>
+
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle text-capitalize"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            more books as a dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">The Great Gatsby</a></li>
+            <li><a class="dropdown-item" href="#">To Kill a Mockingbird</a></li>
+            <li><a class="dropdown-item" href="#">1984</a></li>
+            <li><a class="dropdown-item" href="#">Pride and Prejudice</a></li>
+            <li>
+              <a class="dropdown-item" href="#">The Catcher in the Rye</a>
+            </li>
+            <li><a class="dropdown-item" href="#">The Lord of the Rings</a></li>
+            <li>
+              <a class="dropdown-item" href="#">The Chronicles of Narnia</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                >Harry Potter and the Sorcerer's Stone</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#">To Kill a Mockingbird</a></li>
+            <li><a class="dropdown-item" href="#">The Hobbit</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <footer>
+    <div class="container-lg text-center py-4">
+      <p class="text-muted">
+        &copy; 2024 Atomic Habits. All rights reserved. Designed by
+        <a
+          href="https://www.linkedin.com/in/yousifvn/"
+          class="text-primary"
+          target="_blank"
+          >Yousif Mahmood</a
+        >
+      </p>
+    </div>
+  </footer>
+</html>

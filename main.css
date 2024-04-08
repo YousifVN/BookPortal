@@ -1,0 +1,37 @@
+.text-primary {
+    --bs-text-opacity: 1;
+    color: #c29938 !important;
+}
+
+.border-primary {
+    --bs-border-opacity: 1;
+    border-color: #c29938 !important;
+}
+
+.btn-primary {
+    --bs-btn-font-weight: 300;
+    --bs-btn-color: black;
+    --bs-btn-bg: #c29938;
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: hsl(38, 62%, 60%);
+    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+}
+
+/* Increase specificity for hover */
+form input:hover,
+form textarea:hover,
+form select:hover {
+    border-color: #c29938;
+}
+
+/* Increase specificity for focus */
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #c29938;
+}
