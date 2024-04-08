@@ -1,6 +1,6 @@
-# BookishGateway
+# Book Potral
 
-BookishGateway is a website created to showcase the practical application of Bootstrap after completing a Bootstrap course. It demonstrates how Bootstrap can be used to build responsive and visually appealing web pages.
+Book Portal is a website created to showcase the practical application of Bootstrap after completing a Bootstrap course. It demonstrates how Bootstrap can be used to build responsive and visually appealing web pages.
 
 ## Features
 
